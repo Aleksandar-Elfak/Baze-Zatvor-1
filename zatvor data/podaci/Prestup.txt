@@ -1,0 +1,6 @@
+ID|NAZIV|OPIS|MINIMALNA_KAZNA|MAXIMALNA_KAZNA|KATEGORIJA
+1|KRADJA|Oduzimanje tudje pokretne stvari u nameri da njenim prisvajanjem sebi ili drugom pribavi protivpravnu impovinsku korist|Novcana kazna|3 godine zatvora|IMOVINSKI ZLOCIN
+2|TESKA TELESNA POVREDA|Ko drugog tesko telesno povredi ili mu zdravlje tesko narusi,kaznice se zatvorom|6 meseci|5 godina|KRIVICNA DELA PROTIV ZIVOTA I TELA
+3|NASILJE U PORODICI|Primena nasilja,pretnja da ce napasti zivot ili telo,drsko i bezobzirno ponasanje koje ugrozava spokojstvo,telesni integritet ili dusevno stanje clana porodice|3 meseca|3 godine|NASILNICKI KRIMINAL
+4|LAKA TELESNA POVREDA|Ko drugog lako telesno povredi ili mu zdravlje lako narusi,kazniće se novcanom kaznom ili zatvorom.|novcana kazna|1 godina|KRIVICNA DELA PROTIV ZIVOTA I TELA
+5|TRGOVINA NARKOTIKA|Neovlasceno drzanje,prenosenje i prodaja narkotika|3 godine|12 godina|ORGANIZOVANI KRIMINAL

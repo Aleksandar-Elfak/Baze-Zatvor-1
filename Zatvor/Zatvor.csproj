@@ -1,0 +1,344 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E8F6F8AA-EABA-475C-B6D9-12B96A7C7D77}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Zatvor</RootNamespace>
+    <AssemblyName>Zatvor</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Antlr3.Runtime, Version=3.5.0.2, Culture=neutral, PublicKeyToken=eb42632606e9261f, processorArchitecture=MSIL">
+      <HintPath>..\packages\Antlr3.Runtime.3.5.1\lib\net40-client\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="FluentNHibernate, Version=3.1.0.0, Culture=neutral, PublicKeyToken=8aa435e3cb308880, processorArchitecture=MSIL">
+      <HintPath>..\packages\FluentNHibernate.3.1.0\lib\net461\FluentNHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="Iesi.Collections, Version=4.0.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Iesi.Collections.4.0.4\lib\net461\Iesi.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate, Version=5.3.0.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <HintPath>..\packages\NHibernate.5.3.8\lib\net461\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="Oracle.ManagedDataAccess, Version=4.122.19.1, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=MSIL">
+      <HintPath>..\packages\Oracle.ManagedDataAccess.19.11.0\lib\net40\Oracle.ManagedDataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="Remotion.Linq, Version=2.2.0.0, Culture=neutral, PublicKeyToken=fee00910d6e5f53b, processorArchitecture=MSIL">
+      <HintPath>..\packages\Remotion.Linq.2.2.0\lib\net45\Remotion.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="Remotion.Linq.EagerFetching, Version=2.2.0.0, Culture=neutral, PublicKeyToken=fee00910d6e5f53b, processorArchitecture=MSIL">
+      <HintPath>..\packages\Remotion.Linq.EagerFetching.2.2.0\lib\net45\Remotion.Linq.EagerFetching.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataLayer.cs" />
+    <Compile Include="Entiteti\Advokat.cs" />
+    <Compile Include="Entiteti\DozvolaZaOruzje.cs" />
+    <Compile Include="Entiteti\Firma.cs" />
+    <Compile Include="Entiteti\FirmaKontakt.cs" />
+    <Compile Include="Entiteti\FirmaOdgovornaLica.cs" />
+    <Compile Include="Entiteti\LekarskiPregled.cs" />
+    <Compile Include="Entiteti\Pocinio.cs" />
+    <Compile Include="Entiteti\Posecuje.cs" />
+    <Compile Include="Entiteti\Prestup.cs" />
+    <Compile Include="Entiteti\Saradjuje.cs" />
+    <Compile Include="Entiteti\StrogTerminPosete.cs" />
+    <Compile Include="Entiteti\Zaposleni.cs" />
+    <Compile Include="Entiteti\Zastupa.cs" />
+    <Compile Include="Entiteti\Zatvorenik.cs" />
+    <Compile Include="Entiteti\ZatvorskaJedinica.cs" />
+    <Compile Include="Forme\AdvokatiForma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\AdvokatiForma.Designer.cs">
+      <DependentUpon>AdvokatiForma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\DodajZaposlenogForma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\DodajZaposlenogForma.Designer.cs">
+      <DependentUpon>DodajZaposlenogForma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\DodajZatvorForma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\DodajZatvorForma.Designer.cs">
+      <DependentUpon>DodajZatvorForma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\DodavanjeAdvokataForma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\DodavanjeAdvokataForma.Designer.cs">
+      <DependentUpon>DodavanjeAdvokataForma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\DodavanjeFirmeForma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\DodavanjeFirmeForma.Designer.cs">
+      <DependentUpon>DodavanjeFirmeForma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\DozvolaZaOruzjeForma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\DozvolaZaOruzjeForma.Designer.cs">
+      <DependentUpon>DozvolaZaOruzjeForma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\DodajZatvorenikaForma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\DodajZatvorenikaForma.Designer.cs">
+      <DependentUpon>DodajZatvorenikaForma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\FirmaKontaktForma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\FirmaKontaktForma.Designer.cs">
+      <DependentUpon>FirmaKontaktForma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\FirmaOdgovornaLicaForma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\FirmaOdgovornaLicaForma.Designer.cs">
+      <DependentUpon>FirmaOdgovornaLicaForma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\FirmeForma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\FirmeForma.Designer.cs">
+      <DependentUpon>FirmeForma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\LekarskiPregledForma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\LekarskiPregledForma.Designer.cs">
+      <DependentUpon>LekarskiPregledForma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\PoseteForma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\PoseteForma.Designer.cs">
+      <DependentUpon>PoseteForma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\PrekrsajiZatvorenikaForma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\PrekrsajiZatvorenikaForma.Designer.cs">
+      <DependentUpon>PrekrsajiZatvorenikaForma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\PrikazZaposlenihForma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\PrikazZaposlenihForma.Designer.cs">
+      <DependentUpon>PrikazZaposlenihForma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\PrikazZatvorenikaForma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\PrikazZatvorenikaForma.Designer.cs">
+      <DependentUpon>PrikazZatvorenikaForma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\SaradnjeForma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\SaradnjeForma.Designer.cs">
+      <DependentUpon>SaradnjeForma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\StrogPosetaForma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\StrogPosetaForma.Designer.cs">
+      <DependentUpon>StrogPosetaForma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\TipZaposlenogForma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\TipZaposlenogForma.Designer.cs">
+      <DependentUpon>TipZaposlenogForma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\ZastupaForma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\ZastupaForma.Designer.cs">
+      <DependentUpon>ZastupaForma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\PocetnaStanicaForma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\PocetnaStanicaForma.Designer.cs">
+      <DependentUpon>PocetnaStanicaForma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mapiranja\AdvokatMapiranja.cs" />
+    <Compile Include="Mapiranja\DozvolaZaOruzjeMapiranja.cs" />
+    <Compile Include="Mapiranja\FirmaKontaktMapiranja.cs" />
+    <Compile Include="Mapiranja\FirmaMapiranja.cs" />
+    <Compile Include="Mapiranja\FirmaOdgovornaLicaMapiranja.cs" />
+    <Compile Include="Mapiranja\LekarskiPregledMapiranja.cs" />
+    <Compile Include="Mapiranja\PocinioMapiranja.cs" />
+    <Compile Include="Mapiranja\PosecujeMapiranja.cs" />
+    <Compile Include="Mapiranja\PrestupMapiranja.cs" />
+    <Compile Include="Mapiranja\SaradjujeMapiranja.cs" />
+    <Compile Include="Mapiranja\StrogTerminPoseteMapiranja.cs" />
+    <Compile Include="Mapiranja\ZaposleniMapiranja.cs" />
+    <Compile Include="Mapiranja\ZastupaMapiranja.cs" />
+    <Compile Include="Mapiranja\ZatvorenikMapiranja.cs" />
+    <Compile Include="Mapiranja\ZatvorskaJedinicaMapiranja.cs" />
+    <Compile Include="Forme\PrestupiForma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\PrestupiForma.Designer.cs">
+      <DependentUpon>PrestupiForma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Forme\ZaposleniForma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\ZaposleniForma.Designer.cs">
+      <DependentUpon>ZaposleniForma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\ZatvoreniciForma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\ZatvoreniciForma.Designer.cs">
+      <DependentUpon>ZatvoreniciForma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\ZatvorskeJediniceForma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\ZatvorskeJediniceForma.Designer.cs">
+      <DependentUpon>ZatvorskeJediniceForma.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Forme\AdvokatiForma.resx">
+      <DependentUpon>AdvokatiForma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\DodajZaposlenogForma.resx">
+      <DependentUpon>DodajZaposlenogForma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\DodajZatvorForma.resx">
+      <DependentUpon>DodajZatvorForma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\DodavanjeAdvokataForma.resx">
+      <DependentUpon>DodavanjeAdvokataForma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\DodavanjeFirmeForma.resx">
+      <DependentUpon>DodavanjeFirmeForma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\DodajZatvorenikaForma.resx">
+      <DependentUpon>DodajZatvorenikaForma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\FirmaKontaktForma.resx">
+      <DependentUpon>FirmaKontaktForma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\FirmaOdgovornaLicaForma.resx">
+      <DependentUpon>FirmaOdgovornaLicaForma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\FirmeForma.resx">
+      <DependentUpon>FirmeForma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\LekarskiPregledForma.resx">
+      <DependentUpon>LekarskiPregledForma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\PoseteForma.resx">
+      <DependentUpon>PoseteForma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\PrekrsajiZatvorenikaForma.resx">
+      <DependentUpon>PrekrsajiZatvorenikaForma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\PrikazZaposlenihForma.resx">
+      <DependentUpon>PrikazZaposlenihForma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\PrikazZatvorenikaForma.resx">
+      <DependentUpon>PrikazZatvorenikaForma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\SaradnjeForma.resx">
+      <DependentUpon>SaradnjeForma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\StrogPosetaForma.resx">
+      <DependentUpon>StrogPosetaForma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\TipZaposlenogForma.resx">
+      <DependentUpon>TipZaposlenogForma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\ZastupaForma.resx">
+      <DependentUpon>ZastupaForma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\PocetnaStanicaForma.resx">
+      <DependentUpon>PocetnaStanicaForma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\PrestupiForma.resx">
+      <DependentUpon>PrestupiForma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Forme\ZaposleniForma.resx">
+      <DependentUpon>ZaposleniForma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\ZatvoreniciForma.resx">
+      <DependentUpon>ZatvoreniciForma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\ZatvorskeJediniceForma.resx">
+      <DependentUpon>ZatvorskeJediniceForma.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

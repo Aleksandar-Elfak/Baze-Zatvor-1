@@ -1,0 +1,10 @@
+ID,ID_FIRME,ODGOVORNA_LICA
+1,1,Dusan Peric
+2,2,Stojan Novakovic
+3,3,Ilija Stoilkov
+4,4,Nevena Krajinovic
+5,5,Emilija Bosnic
+6,6,Filip Petrovic
+7,1,Nikola Djikic
+8,2,Petar Demirovic
+9,3,Luka Jankovic

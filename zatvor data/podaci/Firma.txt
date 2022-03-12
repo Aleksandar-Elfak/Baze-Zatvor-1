@@ -1,0 +1,7 @@
+ID,IME_FIRME,PIB
+1,Agrosemeki,123456789
+2,Agrostemin,987654321
+3,Alpinastar,123467895
+4,Zelena zvezda,124356879
+5,Roper Co,135792468
+6,Drvopromet,657483921

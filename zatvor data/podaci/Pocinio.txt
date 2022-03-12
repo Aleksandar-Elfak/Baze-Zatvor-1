@@ -1,0 +1,16 @@
+ID,ID_ZATVORENIKA,ID_PRESTUPA,DATUM,MESTO PRESTUPA
+1,1,1,10-Jan-15,Cacak
+2,2,2,11-Feb-16,Cacak
+3,3,3,12-Mar-17,Valjevo
+4,4,4,13-Apr-18,Vranje
+5,5,5,14-May-19,Uzice
+6,6,1,15-Jun-05,Kraljevo
+7,7,2,16-Jul-06,Cacak
+8,8,3,17-Aug-07,Uzice
+9,9,4,18-Sep-08,Kragujevac
+10,10,5,19-Oct-09,Krusevac
+11,11,1,20-Nov-10,Jagodina
+12,12,2,21-Dec-11,Leskovac
+13,13,3,22-Jan-12,Leskovac
+14,14,4,23-Feb-13,Vranje
+15,15,5,24-Mar-14,Valjevo

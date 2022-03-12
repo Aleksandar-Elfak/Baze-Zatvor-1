@@ -1,0 +1,7 @@
+ID,JMBG,IME,PREZIME,POL
+1,3195970153958,Boban,Nikolic,M
+2,1208974453653,Dragan,Stanisavljevic,M
+3,1304968345544,Ruzica,Blazic,Z
+4,2211967234555,Jelisaveta,Kovacevic,Z
+5,1408977223887,Drasko,Blagic,M
+6,1312967765442,Konstantim,Gavrilovic,M

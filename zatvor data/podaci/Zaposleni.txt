@@ -1,0 +1,11 @@
+ID,JMBG,IME,PREZIME,POL,DATUM_PPZ,NAZIV_RADNOG_MESTA,A_STRUCNA_SPREMA,A_ZANIMANJE,A_POZICIJA,ID_ZATVORSKE_JEDINICE,DATUM_POCETKA_RADA 
+1,0805002422053,Snezana,Katic,Z,13-Jan-21,Psiholog,,,,1,12-Feb-88
+2,1111953232593,Goran,Okolic,M,12-Dec-20,Obezbedjenje,,,,2,15-Mar-12
+3,3105870139585,Srecko,Belic,M,18-Sep-20,Administracija,Fakultet,Racunovodja,Sef racunovodstva,2,13-Oct-05
+4,0507994080011,Dragan,Dinic,M,18-Jan-19,Administracija,Visa skola,Finansijski administrator,Knjigovodja,3,13-May-07
+5,2201961433099,Goran,Djukic,M,13-Feb-20,Psiholog,,,,4,3-Nov-08
+6,0314443111300,Zdravko,Simeunovic,M,14-Feb-21,Obezbedjenje,,,,5,4-Jun-14
+7,1312967765422,Slobodan,Antic,M,20-Jan-20,Obezbedjenje,,,,1,16-May-16
+8,0219789851540,Marjan,Bogdanovic,M,17-Apr-20,Obezbedjenje,,,,3,16-Jul-17
+9,1208974453565,Nikola,Nikolic,M,18-Jul-20,Upravnik,,,,4,18-Dec-18
+10,1309777467444,Pera,Peric,M,19-Aug-19,Upravnik,,,,5,7-Oct-17

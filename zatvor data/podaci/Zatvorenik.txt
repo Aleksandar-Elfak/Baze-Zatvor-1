@@ -1,0 +1,16 @@
+ID,JMBG,IME,PREZIME,POL,BROJ,ADRESA,DATUM_SASLUSANJA,STATUS_USLOVNOG_OTPUSTA,ID_ZATVORSKE_JEDINICE
+1,1234567891011,Pera,Peric,M,12345,Sime Pogacarevica 11,21-Apr-21,Y,2
+2,1606999019003,Stefan,Stojanovic,M,55555,Obilicev venac Cara Urosa 1,29-Jan-20,N,5
+3,0203990156543,Nemanja,Pesic,M,10101,Branko Krsmanovic 11,13-Jun-19,N,1
+4,1207950740051,Slavica,Stojanovic,Z,98765,Takovska Dalmatinska,05-Apr-12,N,3
+5,1709985450051,Vukica,Cvetkovic,Z,14789,Tadije Sondermajera,11-Oct-75,N,1
+6,2006996123742,Aleksandra,Filipovski,Z,33333,Nikola Tesla 99,01-Dec-23,Y,2
+7,1101974094213,Srba,Momcilovic,M,54631,Kolubarska 5,21-Nov-17,Y,5
+8,0512969840024,Momcilo,Krsmanovic,M,15612,Branko Krsmanovic 12,03-Jun-18,N,4
+9,0611999956232,Goran,Doktorcic,M,16510,Bulevar Milutina 46,01-Apr-21,Y,2
+10,301198231432,Miodrag,Petrovic,M,15630,Kosovska 23,09-May-13,N,3
+11,111099954631,Petar,Tasic,M,00000,Radoje Domanovic 11,30-Jun-21,Y,4
+12,121298945455,Milos,Kocic,M,32165,Antifasiticke borbe 2,10-Jun-96,Y,1
+13,210599821311,Marina,Miljkovic,Z,47942,Cede Stajica 32,1-Jan-29,Y,1
+14,120398654466,Ivan,Pejcic,M,68413,Dr Ivana Ribara,03-Nov-96,N,5
+15,160201541334,Milica,Cvetkovic,Z,49312,Uzicka 2/a,16-Feb-02,Y,3
